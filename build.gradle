@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+apply plugin: 'java-library-distribution'
+
+mainClassName = 'GaussJordanElimination.view.MainFrame'
+
+// Task "distZip" added by plugin "java-library-distribution":
+distZip.shouldRunAfter(build)
+
+repositories {
+    jcenter()
+    maven {
+        url  "https://dl.bintray.com/jformdesigner/flatlaf" 
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    runtime fileTree(dir: 'libs', include: '*.jar')
+    compile group: 'com.miglayout', name: 'miglayout-swing', version: '5.2'
+    compile group: 'org.pushing-pixels', name: 'radiance-photon', version: '2.5.1'
+    compile 'com.formdev:flatlaf:0.12'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.MF'
+    manifest { 
+        attributes('Main-Class': 'GaussJordanElimination.view.MainFrame',
+                   'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' '))
+    }
+}
