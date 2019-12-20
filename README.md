@@ -8,7 +8,7 @@ This is a basic desktop application to solve equations using GaussJordan & Gausi
 [![GitHub forks](https://img.shields.io/github/forks/mmabas77/GaussJordan-Gausian-Elimination-Solver)](https://github.com/mmabas77/GaussJordan-Gausian-Elimination-Solver/network)
 [![GitHub stars](https://img.shields.io/github/stars/mmabas77/GaussJordan-Gausian-Elimination-Solver)](https://github.com/mmabas77/GaussJordan-Gausian-Elimination-Solver/stargazers)
 [![GitHub license](https://img.shields.io/github/license/mmabas77/GaussJordan-Gausian-Elimination-Solver)](https://github.com/mmabas77/GaussJordan-Gausian-Elimination-Solver/blob/master/LICENSE)
-
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N71APE8)
 
 ## Screen Shot
 ![Screen Shot Of The App](https://raw.githubusercontent.com/mmabas77/GaussJordan-Gausian-Elimination-Solver/master/screen-shot.png)
